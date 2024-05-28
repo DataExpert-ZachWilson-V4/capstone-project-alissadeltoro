@@ -3,8 +3,48 @@
 # Bat Tracking Data Analysis Project
 
 ## Overview
+This project focuses on developing an ETL pipeline and an interactive visualization tool for analyzing bat tracking data. The goal is to assist coaches and analysts in assessing swing quality and understanding the physical factors impacting a player's performance.
 
-This project was developed for a hackathon focused on analyzing bat tracking data to assess swing quality and understand factors impacting a player's performance. It also serves as a data engineering capstone project, demonstrating the creation of an ETL pipeline, data quality checks, and an interactive visualization tool.
+## Conceptual Model
+
+### Components and Data Flow
+The conceptual model of this project involves several key components that work together to process, analyze, and visualize bat tracking data.
+
+1. **Data Ingestion**
+   - **Raw Data Source**: The bat tracking data, including location data for bat head and handle, ball position, and metadata (e.g., pitch speed, pitch type, exit velocity, launch angle).
+   - **ETL Pipeline**: Extracts data from the raw source, transforms it into a structured format, and loads it into a database.
+
+2. **Data Transformation and Storage**
+   - **Transformation**: Data cleaning and processing steps to ensure quality and consistency (e.g., filling missing values, validating ranges).
+   - **Data Storage**: Structured storage of transformed data in a relational database, designed for efficient querying and analysis.
+
+3. **Analysis and Metric Calculation**
+   - **Metric Calculation**: Calculation of key performance metrics from the structured data, such as bat speed, exit velocity, launch angle, and contact quality.
+
+4. **Interactive Visualization**
+   - **Web Application**: A user-friendly interface developed using a framework like React, Dash, or Shiny, allowing users to interact with the data.
+   - **Visualization Tools**: Tools to compare swings, visualize metrics, and analyze pitch impact.
+
+### Data Flow Diagram
+
+```plaintext
+Raw Data Source (Bat tracking data)
+       |
+       v
+   ETL Pipeline
+(Extract, Transform, Load)
+       |
+       v
+Structured Data Storage (Database)
+       |
+       v
+ Metric Calculation (Bat speed, Exit velocity, etc.)
+       |
+       v
+Web Application (React/Dash/Shiny)
+       |
+       v
+Interactive Visualization (Swing comparison, Metric visualization)
 
 ## Project Structure
 
