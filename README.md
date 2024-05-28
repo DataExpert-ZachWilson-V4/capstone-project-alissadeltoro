@@ -45,6 +45,7 @@ Web Application (React/Dash/Shiny)
        |
        v
 Interactive Visualization (Swing comparison, Metric visualization)
+```
 
 ## Project Structure
 
